@@ -20,8 +20,8 @@ class AnimalsController < ApplicationController
   end
 
 def update
-  animal = Animal.new(animal_params)
-  if animal.update
+  animal = Animal.find(params[:id])
+  if animal.update(animal_params)
     render json: animal
   else
     render json: {status: 500, message: 'Animal could not be updated'}
@@ -40,7 +40,7 @@ end
 private
 
 def animal_params
-  params require(:animal).permit(:name, :size, :type, :color, :description)
+  params.require(:animal).permit(:name, :size, :color, :animal_type, :description)
 end
 
 end
