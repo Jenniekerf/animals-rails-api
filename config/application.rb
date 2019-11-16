@@ -13,7 +13,7 @@ module AnimalsRailsApi
 
     config.middleware.insert_before 0, Rack::Cors do
      allow do
-       origins '*'
+       origins 'http://localhost:3000'
        resource '*', headers: :any, methods: [:get, :post, :options, :put, :delete, :patch]
      end
    end
