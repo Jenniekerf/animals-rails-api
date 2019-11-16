@@ -40,7 +40,7 @@ end
 private
 
 def animal_params
-  params.require(:animal).permit(:name, :size, :color, :animal_type, :description)
+  params.require(:animal).permit(:name, :status, :area, :animal_type, :description)
 end
 
 end
