@@ -17,7 +17,6 @@ gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
-gem 'active_model_serializers', '~> 0.10.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -28,7 +27,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rack-cors'
 gem 'foreman', '~> 0.82.0'
 gem 'thor', '~> 0.19.1'
-gem 'cloudinary'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
